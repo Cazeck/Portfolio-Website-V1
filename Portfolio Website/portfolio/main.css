@@ -10,6 +10,7 @@ html{
     font-family: 'Roboto', sans-serif;
     font-family: 'Poppins', sans-serif;
     color: #eee;
+    color: #c0c0c0;
 }
 
 body{
@@ -31,6 +32,7 @@ a{
 p{
     font-size: 1.8rem;
     font-weight: 300;
+    margin-bottom: 1.5rem;
 }
 
 img{
@@ -49,12 +51,13 @@ img{
 
 .section-heading{
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 .section-heading h1{
     font-size: 3.5rem;
     color: rgba(255,255,255, .3);
+    color: #20B2AA;
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
@@ -86,7 +89,8 @@ img{
 
 .section-heading h6{
     font-size: 1.6rem; 
-    font-weight: 300; 
+    font-weight: 300;
+    color: #eee;
 }
 
 .has-margin-right{
@@ -124,6 +128,30 @@ header{
 
 li{
     margin: 0 2rem;
+}
+
+.text-link{
+    text-decoration: none;
+    color: #20B2AA;
+    transition: color 650ms;
+}
+
+
+/*
+.text-link .cta{
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3883ff;
+    color: #20B2AA;
+    transition: color 650ms;
+}
+*/
+
+.text-link:hover{ 
+    color: #2f67cd;
+    transition: color 650ms;
 }
 
 .nav-link{
@@ -207,7 +235,7 @@ li{
 .landing-text h1{
     font-size: 10rem;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to top, #87CEFA, #20B2AA);
+    background: linear-gradient(to top, #c0c0c0, #20B2AA);
     background: #20B2AA;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -222,12 +250,14 @@ li{
 /*End header*/
 
 /*Start about*/
+
+
 .about .container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+/*
 .about-heading{
     text-align: center;
     text-transform: uppercase;
@@ -244,6 +274,7 @@ li{
     font-weight: 300;
 }
 
+*/ 
 .profile-img{
     flex: 1;
     margin-right: 5rem;
@@ -252,6 +283,26 @@ li{
 .about-details{
     flex: 1;
 }
+
+ul.tech-list{
+    list-style: none;
+    columns: 2;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.tech-list li{
+    padding-left: 2rem;
+    text-indent: -.7rem;
+}
+
+.tech-list li::before{
+    content: "\2022";
+    padding-right: 10px;
+    color: #20B2AA;
+}
+
 .social-media{
     margin-top: 5rem;
 }
@@ -269,8 +320,16 @@ li{
     color: #38a1f3;
 }
 
-.fa-dribbble-square:hover{
-    color: #ea4c89;
+.fa-linkedin:hover{
+    color: #0077b5;
+}
+
+.fa-github-square:hover{
+    color: #6cc644;
+}
+
+.fa-envelope-square:hover{
+    color: #20B2AA;
 }
 /*End about*/
 
@@ -343,18 +402,20 @@ li{
     font-size: 3rem;
     font-weight: 300;
     margin: 1rem 0;
+    color: #eee;
 }
 
 .portfolio-description h6{
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 300;
-    opacity: .3;
+    color: #20B2AA;
+    opacity: .7;
 }
 
 .portfolio-description .cta{
     display: inline-block;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #3883ff;
@@ -365,6 +426,38 @@ li{
 .portfolio-description .cta:hover{
     color: #2f67cd;
 }
+
+.app-links{
+    margin-top: 2rem;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.app-links li{
+    text-indent: -.8rem;
+}
+
+.app-links i{
+    font-size: 2.5rem;
+    transition: color 650ms;
+}
+
+.fa-android:hover{
+    color: #78C257;
+}
+
+.fa-apple:hover{
+    color: #A3AAAE;
+}
+
+.fa-github:hover{
+    color: #6cc644;
+}
+
 /*End portfolio*/
 
 /*Start timeline*/
@@ -386,7 +479,7 @@ li{
     text-transform: uppercase;
     font-weight: 300;
     margin-bottom: 1rem;
-    opacity: .3;
+    color: #eee;
 }
 
 .timeline .date{
@@ -432,6 +525,11 @@ li{
 /*End timeline*/
 
 /*Start contact*/
+
+.contact-me{
+    flex: 1;
+}
+
 .contact{
     background-color: #221e3f;
 }
