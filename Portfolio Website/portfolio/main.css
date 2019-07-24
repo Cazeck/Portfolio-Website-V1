@@ -528,6 +528,9 @@ ul.tech-list{
 
 .contact-me{
     flex: 1;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .contact{
@@ -535,8 +538,10 @@ ul.tech-list{
 }
 
 form{
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
+    text-align: center;
+    padding-top: 3rem;
 }
 
 form label{
