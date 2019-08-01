@@ -632,6 +632,7 @@ input[type="submit"]:hover{
 /*End animations*/
 
 /*Start media queries*/
+/* Tablets */
 @media screen and (max-width: 768px){
     body{
         background: url(images/sitebg2.jpg) no-repeat center fixed;
@@ -666,12 +667,20 @@ input[type="submit"]:hover{
         font-size: 3rem;
     }
 
+    .about .container{
+        flex-direction: column;
+    }
+
     .about-details .nav-list{
         flex-direction: initial;
     }
 
     .about-details li{
         margin: 0 2rem;
+    }
+
+    .about-details{
+        margin-top: 3rem;
     }
 
     .icon-container{
@@ -696,6 +705,7 @@ input[type="submit"]:hover{
     }
 }
 
+/* Cell phone */
 @media screen and (max-width: 600px){
     .menu-toggler{
         top: 2rem;
